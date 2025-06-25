@@ -1,0 +1,87 @@
+.Evo{
+    width: 170px;
+    height:40px ;
+    background:linear-gradient(to right,#b8860b,#123499) ;
+    font-size: 18px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 1rem;
+    border-radius: 5px;
+    color: #FAF9F6;
+    box-shadow: 2px 2px 2px 3px rgb(#123499, #b8860b, #000);
+    font-family: "Pacifico", cursive;
+  font-weight: 700;
+  font-style: normal;
+}
+
+.Sub-P{
+ min-width: 100%;
+    min-height: Auto;
+    padding: 2px 3px;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(100px , 1fr));
+    grid-template-rows: auto;
+    justify-content: space-around;
+    padding: 5px;
+    margin-top: 1rem;   
+}
+
+.Evo-link{
+    width: 180px;
+    height: 40px;
+    background: linear-gradient(to right,#123499,#b8860b);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: none;
+    transition: transform 0.5s;
+    cursor: pointer;
+}
+.Evo-link > img{
+    height: 40px;
+    width: 65px;
+}
+
+.Evo-link:hover{
+    transform: scale(1.03);
+    box-shadow: 2px 2px 2px  var(--color-2);
+}
+
+
+@media screen and (max-width:768px) {
+.Sub-P{
+    min-width: 100%;
+    min-height: Auto;
+    padding: 2px 3px;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(140px , 1fr));
+    grid-template-rows: auto;
+    padding: 5px;
+    margin-top: 1rem;
+    gap: 20px;
+}
+
+    .Evo-link{
+    width: 145px;
+    height: 40px;
+    border: none;
+}
+.Evo-link > img{
+    height: 40px;
+    width: 65px;
+}
+}
+footer{
+    width: 100%;
+    height: 7vh;
+    background-color: #b8860b;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 1rem;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 17px;
+    color: #FAF9F6;
+    letter-spacing: 2px;
+}

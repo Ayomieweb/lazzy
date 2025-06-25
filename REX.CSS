@@ -1,0 +1,186 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  min-height: 100vh;
+  box-sizing: border-box;
+  background: #FAF9F6;
+  overflow: hidden;
+  /* animation: body-glow 4s infinite;
+  border: 2px solid transparent;
+  border-image: linear-gradient(45deg, #00BFFF, #39FF14, #FFD700) 1; */
+}
+
+main{
+    min-height: 100%;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(500px,1fr));
+    overflow: hidden;
+}
+.INto{
+    width: 90%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    flex-direction: column;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    color:black ;
+}
+h3{
+    font-size: 50px;
+     font-family: "Pacifico", cursive;
+  font-weight: 700;
+  font-style: normal;
+  font-family: "Alegreya", serif;
+  font-style: normal;
+  line-height: 3rem;
+  animation: INTODUC 2s;
+}
+span{
+    color:#FFD700 ;
+    font-size: 60px;
+    font-family: "Pacifico", cursive;
+  font-weight: 400;
+  font-style: normal;
+}
+.into_2{
+    margin-top: 0;
+    animation: INTODUC_2 3s;
+}
+.i.mg{
+    width: 50%;
+    height: 100%;
+    overflow: hidden;
+    
+}
+img{
+    height: 100%;
+    object-fit: cover;
+    animation: IMAGE 5s;
+}
+.BUTTON{
+    width: 100%;
+    margin-top: 18px;
+}
+@media screen and (max-width:768px) {
+
+    main{
+    min-height: 100%;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px,1fr));
+    overflow: hidden;
+    grid-gap: 3rem;
+}
+    .INto{
+        margin-top: 2rem;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    flex-direction: column;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    color:black;
+}
+h3{
+    font-size: 20px;
+     font-family: "Pacifico", cursive;
+  font-weight: 700;
+  font-style: normal;
+  font-family: "Alegreya", serif;
+  font-style: normal;
+  line-height: 1.5rem;
+  animation: INTODUC 2s;
+}
+span{
+    color:darkgoldenrod ;
+    font-size: 60px;
+    font-family: "Pacifico", cursive;
+  font-weight: 400;
+  font-style: normal;
+}
+.into_2{
+    margin-top: 5px;
+    animation: INTODUC_2 3s;
+    font-size: 15px;
+}
+.i.mg{
+    width: 100%;
+    overflow: hidden;
+}
+img{
+    width: 65%;
+    height: 100%;
+    object-fit: cover;
+    animation: IMAGE 4s;
+}
+.BUTTON{
+    width: 100%;
+    margin-top: 10px;
+}
+
+}
+button{
+    padding: 0.5rem 0.5rem;
+    border: none;
+    background-color: darkgoldenrod;
+    font-size: 1rem;
+    font-family: "Alegreya", serif;
+    font-weight: bold;
+    color: #FAF9F6;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: 0.2s;
+    animation: B-UTTON 4s;
+}
+button:hover{
+    background-color:#123499 ;
+    color: #FAF9F6;
+}
+img{
+    object-fit: cover;
+}
+
+@keyframes INTODUC{
+    from{
+        transform: translateX(-900px);
+    }
+    to{
+        transform: translateX(0px);
+    }
+}
+
+@keyframes INTODUC_2{
+    from{
+        transform: translateX(-1000px);
+    }
+    to{
+        transform: translateX(0px);
+    }
+}
+
+
+@keyframes B-UTTON{
+    from{
+        transform: translateX(-1000px);
+    }
+    to{
+        transform: translateX(0px);
+    }
+}
+
+@keyframes IMAGE{
+    from{
+        transform: translateY(2000px);
+    }
+    to{
+        transform: translateY(0px);
+    }
+}
